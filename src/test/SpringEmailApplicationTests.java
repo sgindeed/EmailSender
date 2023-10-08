@@ -9,5 +9,4 @@ class SpringEmailApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
