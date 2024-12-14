@@ -29,7 +29,7 @@ public class SpringEmailApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void triggerMail() throws MessagingException {
-		emailSenderService.sendMailWithAttachment("sgindeed234@gmail.com",
+		emailSenderService.sendMailWithAttachment("RECIEVER_MAIL",
 				"This is email body.",
 				"This email subject",
 				"files/Supratim demo cv 1page (2).pdf");
