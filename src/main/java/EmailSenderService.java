@@ -29,7 +29,7 @@ public class EmailSenderService {
                                        String attachment) throws MessagingException {
         MimeMessage mimeMessage=javaMailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper=new MimeMessageHelper(mimeMessage,true);
-        mimeMessageHelper.setFrom("sup06.connect@gmail.com");
+        mimeMessageHelper.setFrom("SENDER_MAIL");
         mimeMessageHelper.setTo(toEmail);
         mimeMessageHelper.setText(body);
         mimeMessageHelper.setSubject(subject);
